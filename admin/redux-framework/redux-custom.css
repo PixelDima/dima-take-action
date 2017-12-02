@@ -108,8 +108,8 @@
 }
 
 #redux-defaults-section, #redux-defaults {
-    background: #f2f2f2;
-    color: #999;
+    background: #ffffff;
+    color: #333333;
 }
 
 .redux-container #redux-footer #redux-share{
@@ -175,3 +175,92 @@
 	display: none;
 }
 .redux-notice-field{border: 0;background: 0;box-shadow: none;}
+
+/*extension listing*/
+.dima_ta_extension_listing .align_left {
+    float: left;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dima_ta_extension_listing .align_left img {
+    max-width: 80px;
+    opacity: 1
+}
+
+.dima_ta_extension_listing .align_left a {
+    display: grid
+}
+
+.dima_ta_extension_listing li {
+    margin-right: 13px;
+}
+
+.extension_desc {
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+    width: 265px;
+}
+
+.extension_desc h2 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #2962ff;
+    font-weight: 500;
+}
+
+.extension_desc p {
+    margin: 0;
+    color: #666
+}
+
+.extension_btn {
+    display: inline-block;
+    background: #2962ff;
+    border-radius: 30px;
+    color: #fff;
+    padding: 6px 25px 8px 25px;
+    margin-top: 19px;
+    float: left;
+}
+
+.dima_ta_extension_listing ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dima_ta_extension_listing li {
+    float: left;
+    padding-bottom: 20px;
+}
+
+.dima_ta_extension_listing li a {
+    background: #ffffff;
+    float: left;
+    padding: 15px 12px;
+    border: 1px solid #eee;
+}
+
+.premium_features_btn {
+    margin-left: 10px;
+    background: #f3f3f3;
+    font-size: 12px !important;
+    color: #555 !important;
+    padding: 6px 11px;
+    letter-spacing: 0.1px;
+    border-radius: 60px;
+    margin-right: 0;
+}
+
+.getting_started_listing .align_left {
+    display: none
+}
+
+.getting_started_listing li a {
+    width: 288px
+}
+
+.dima_ta_extension_listing li a:hover {
+    border-color: rgba(48, 63, 159, 0.35)
+}
