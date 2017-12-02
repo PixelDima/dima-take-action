@@ -16,8 +16,8 @@
 <?php
 
 global $dima_ta_demo;
-$campaignName = 'cybermonday';
-$campaignN    = '20171120';
+$campaignName = $dima_ta_demo['dima-ta-banner-campaign-name'];
+$campaignN    = $dima_ta_demo['dima-ta-banner-campaign-id'];
 $campaignID   = $campaignN . '-' . $campaignName;
 $dataCacheKey = 'banner_' . $campaignID . '_cache';
 #button

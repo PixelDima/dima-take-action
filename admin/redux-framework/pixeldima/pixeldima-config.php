@@ -103,22 +103,29 @@ $args = array(
 
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
 $args['share_icons'][] = array(
-	'url'   => 'https://github.com/pixeldima',
-	'title' => 'Visit us on GitHub',
-	'icon'  => 'el el-github'
-	//'img'   => '', // You can use icon OR img. IMG needs to be a full URL.
-);
-
-$args['share_icons'][] = array(
 	'url'   => 'https://www.facebook.com/pages/pixeldima',
 	'title' => 'Like us on Facebook',
 	'icon'  => 'el el-facebook'
 );
+
 $args['share_icons'][] = array(
 	'url'   => 'http://twitter.com/pixeldima',
 	'title' => 'Follow us on Twitter',
 	'icon'  => 'el el-twitter'
 );
+
+$args['share_icons'][] = array(
+	'url'   => 'https://pixeldima.com/',
+	'title' => 'Visit our Website',
+	'icon'  => 'el el-globe'
+);
+
+$args['share_icons'][] = array(
+	'url'   => 'https://github.com/pixeldima',
+	'title' => 'Visit us on GitHub',
+	'icon'  => 'el el-github'
+);
+
 $args['share_icons'][] = array(
 	'url'   => 'http://www.linkedin.com/company/pixeldima',
 	'title' => 'Find us on LinkedIn',
@@ -172,7 +179,33 @@ Redux::setSection( $opt_name, array(
 			'default' => true,
 		),
 
+		array(
+			'id'       => 'dima-ta-banner-campaign-name',
+			'type'     => 'text',
+			'title'    => __( 'Campaign Name', 'dima-take-action' ),
+			'subtitle' => '',
+			'desc'     => '',
+			'validate' => 'text',
+			'msg'      => '',
+			'default'  => __( 'campaign', 'dima-take-action' ),
+			'required' => array(
+				array( 'dima-ta-use-button', 'equals', true ),
+			)
+		),
 
+		array(
+			'id'       => 'dima-ta-banner-campaign-id',
+			'type'     => 'text',
+			'title'    => __( 'Campaign ID', 'dima-take-action' ),
+			'subtitle' => '',
+			'desc'     => '',
+			'validate' => 'text',
+			'msg'      => '',
+			'default'  => __( '123456', 'dima-take-action' ),
+			'required' => array(
+				array( 'dima-ta-use-button', 'equals', true ),
+			)
+		),
 		array(
 			'id'      => 'dima-ta-banner-pos',
 			'type'    => 'button_set',
@@ -418,6 +451,48 @@ Redux::setSection( $opt_name, array(
 	)
 ) );
 
+Redux::setSection( $opt_name, array(
+	'title'      => __( 'Mobile', 'dima-take-action' ),
+	'id'         => 'dima-ta-mobile',
+	'class'      => 'dima_ta_mobile',
+	'subsection' => true,
+	'fields'     => array(
+		array(
+			'id'       => 'dima-ta-use-banner-mobile',
+			'type'     => 'switch',
+			'title'    => __('Show banner on small screen', 'dima-take-action'),
+			'default'  => true,
+		),
+
+		array(
+			'id'               => 'dima-ta-banner-mobile-url',
+			'type'             => 'text',
+			'title'            => __('Message URL For Mobile', 'dima-take-action'),
+			'validate' => 'url',
+			'msg'      => '',
+			'default'  => 'https://pixeldima.com/',
+			'required' => array(
+				array('dima-ta-use-banner-mobile','equals',true),
+			)
+		),
+
+		array(
+			'id'               => 'dima-ta-banner-mobile-msg',
+			'type'             => 'editor',
+			'title'            => __('Message Text For Mobile', 'dima-take-action'),
+			'default'          => 'Powered by PixelDima.',
+			'args'   => array(
+				'teeny'            => true,
+				'media_buttons'    => false,
+				'textarea_rows'    => 10
+			),
+			'required' => array(
+				array('dima-ta-use-banner-mobile','equals',true),
+			)
+		),
+
+	)
+));
 
 Redux::setSection( $opt_name, array(
 	'title'      => __( 'About', 'dima-take-action' ),
