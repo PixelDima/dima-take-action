@@ -421,7 +421,7 @@ Redux::setSection( $opt_name, array(
 
 Redux::setSection( $opt_name, array(
 	'title'      => __( 'About', 'dima-take-action' ),
-	'desc'            => __( '<p class="description">We provide free and premium digital products, everything you need to power your design process and your online business from WordPress themes, HTML templates, Plugins and much more</p>', 'dima-take-action' ),
+	'desc'            => __( '<p class="description"><strong>We build Pixel-perfect WordPress Themes & Plugins.</strong><br> Get everything you need to power your online business and design process</p>', 'dima-take-action' ),
 	'id'         => 'dima-ta-more',
 	'class'      => 'dima_ta_more',
 	'subsection' => true,
