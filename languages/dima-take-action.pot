@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Dima Take Action\n"
-"POT-Creation-Date: 2017-12-01 16:55+0100\n"
+"POT-Creation-Date: 2018-08-06 23:17+0100\n"
 "PO-Revision-Date: 2017-12-01 16:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: dima-take-action.php\n"
@@ -828,7 +828,7 @@ msgid "Subscribe"
 msgstr ""
 
 #: admin/redux-framework/ReduxCore/inc/tracking.php:175
-#: admin/redux-framework/pixeldima/pixeldima-config.php:187
+#: admin/redux-framework/pixeldima/pixeldima-config.php:207
 msgid "Close"
 msgstr ""
 
@@ -1634,7 +1634,7 @@ msgstr ""
 
 #: admin/redux-framework/ReduxCore/templates/panel/footer.tpl.php:57
 #: admin/redux-framework/ReduxCore/templates/panel/header_stickybar.tpl.php:21
-#: includes/class-pixeldima-base.php:175
+#: includes/class-pixeldima-base.php:168
 msgid "Save Changes"
 msgstr ""
 
@@ -1716,215 +1716,255 @@ msgstr ""
 msgid "Activate Demo Mode"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:68
-#: admin/redux-framework/pixeldima/pixeldima-config.php:69
+#: admin/redux-framework/pixeldima/pixeldima-config.php:52
+#: admin/redux-framework/pixeldima/pixeldima-config.php:53
 msgid "DIMA Take Action"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:132
+#: admin/redux-framework/pixeldima/pixeldima-config.php:126
 msgid "Theme Information 1"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:133
-#: admin/redux-framework/pixeldima/pixeldima-config.php:138
+#: admin/redux-framework/pixeldima/pixeldima-config.php:127
+#: admin/redux-framework/pixeldima/pixeldima-config.php:132
 msgid "<p>This is the tab content, HTML is allowed.</p>"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:137
+#: admin/redux-framework/pixeldima/pixeldima-config.php:131
 msgid "Theme Information 2"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:144
+#: admin/redux-framework/pixeldima/pixeldima-config.php:138
 msgid "<p>This is the sidebar content, HTML is allowed.</p>"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:150
-#: includes/class-pixeldima-base.php:83
+#: admin/redux-framework/pixeldima/pixeldima-config.php:144
+#: includes/class-pixeldima-base.php:76
 msgid "Settings"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:152
+#: admin/redux-framework/pixeldima/pixeldima-config.php:146
 msgid "These are really basic fields!"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:158
+#: admin/redux-framework/pixeldima/pixeldima-config.php:152
 msgid "General"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:168
+#: admin/redux-framework/pixeldima/pixeldima-config.php:162
 msgid "Enabled Banner"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:176
-msgid "Select bnner Position"
+#: admin/redux-framework/pixeldima/pixeldima-config.php:169
+msgid "Campaign Name"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:174
+msgid "campaign"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:183
+msgid "Campaign ID"
 msgstr ""
 
 #: admin/redux-framework/pixeldima/pixeldima-config.php:188
+msgid "123456"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:196
+msgid "Select bnner Position"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:208
 msgid "Displays a close button at the top right corner of the bar."
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:195
+#: admin/redux-framework/pixeldima/pixeldima-config.php:215
 msgid "Use A Button"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:202
-#: admin/redux-framework/pixeldima/pixeldima-config.php:502
+#: admin/redux-framework/pixeldima/pixeldima-config.php:222
+#: admin/redux-framework/pixeldima/pixeldima-config.php:541
 msgid "Button Text"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:207
+#: admin/redux-framework/pixeldima/pixeldima-config.php:227
 msgid "Download Now"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:216
-#: admin/redux-framework/pixeldima/pixeldima-config.php:509
+#: admin/redux-framework/pixeldima/pixeldima-config.php:236
+#: admin/redux-framework/pixeldima/pixeldima-config.php:548
 msgid "Button URL"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:230
+#: admin/redux-framework/pixeldima/pixeldima-config.php:250
+#: admin/redux-framework/pixeldima/pixeldima-config.php:557
+msgid "Open on New Window"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:260
 msgid "Message Text"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:246
+#: admin/redux-framework/pixeldima/pixeldima-config.php:275
 msgid "Banner Style"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:254
+#: admin/redux-framework/pixeldima/pixeldima-config.php:283
 msgid "Banner Height (px)"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:265
+#: admin/redux-framework/pixeldima/pixeldima-config.php:294
 msgid "Select Banner Width unite"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:276
+#: admin/redux-framework/pixeldima/pixeldima-config.php:305
 msgid "Banner Width (%)"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:290
+#: admin/redux-framework/pixeldima/pixeldima-config.php:319
 msgid "Banner Width (px)"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:304
+#: admin/redux-framework/pixeldima/pixeldima-config.php:333
+msgid "Font Size (px)"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:347
 msgid "Select Background Color Type"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:318
+#: admin/redux-framework/pixeldima/pixeldima-config.php:361
 msgid "Background Image"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:345
+#: admin/redux-framework/pixeldima/pixeldima-config.php:388
 msgid "Banner Gradient Background Color"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:374
+#: admin/redux-framework/pixeldima/pixeldima-config.php:417
 msgid "Banner button Style"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:382
+#: admin/redux-framework/pixeldima/pixeldima-config.php:424
 msgid "Button Height (px)"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:421
+#: admin/redux-framework/pixeldima/pixeldima-config.php:462
 msgid "Mobile"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:429
+#: admin/redux-framework/pixeldima/pixeldima-config.php:470
 msgid "Show banner on small screen"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:436
+#: admin/redux-framework/pixeldima/pixeldima-config.php:477
 msgid "Message URL For Mobile"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:448
+#: admin/redux-framework/pixeldima/pixeldima-config.php:489
 msgid "Message Text For Mobile"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:465
+#: admin/redux-framework/pixeldima/pixeldima-config.php:505
 msgid "Float Button"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:473
+#: admin/redux-framework/pixeldima/pixeldima-config.php:512
 msgid "Enabled"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:481
+#: admin/redux-framework/pixeldima/pixeldima-config.php:520
 msgid "Logo"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:548
+#: admin/redux-framework/pixeldima/pixeldima-config.php:591
+msgid "About"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:592
+msgid ""
+"<p class=\"description\"><strong>We build Pixel-perfect WordPress Themes & "
+"Plugins.</strong><br> Get everything you need to power your online business "
+"and design process</p>"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:600
+msgid "Creative themes"
+msgstr ""
+
+#: admin/redux-framework/pixeldima/pixeldima-config.php:608
 msgid "Customizer Only"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:549
+#: admin/redux-framework/pixeldima/pixeldima-config.php:609
 msgid ""
 "<p class=\"description\">This Section should be visible only in Customizer</"
 "p>"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:555
+#: admin/redux-framework/pixeldima/pixeldima-config.php:615
 msgid "Customizer Only Option"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:556
+#: admin/redux-framework/pixeldima/pixeldima-config.php:616
 msgid "The subtitle is NOT visible in customizer"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:557
+#: admin/redux-framework/pixeldima/pixeldima-config.php:617
 msgid "The field desc is NOT visible in customizer."
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:573
+#: admin/redux-framework/pixeldima/pixeldima-config.php:633
 msgid "Documentation"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:659
+#: admin/redux-framework/pixeldima/pixeldima-config.php:719
 msgid "Section via hook"
 msgstr ""
 
-#: admin/redux-framework/pixeldima/pixeldima-config.php:660
+#: admin/redux-framework/pixeldima/pixeldima-config.php:720
 msgid ""
 "<p class=\"description\">This is a section created by adding a filter to the "
 "sections array. Can be used by child themes to add/remove sections from the "
 "options.</p>"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:108
+#: includes/class-pixeldima-base.php:101
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: includes/class-pixeldima-base.php:128
+#: includes/class-pixeldima-base.php:121
 msgid ""
 "If you have a caching plugin, clear the cache for the new settings to take "
 "effect."
 msgstr ""
 
-#: includes/class-pixeldima-base.php:146
+#: includes/class-pixeldima-base.php:139
 msgid "Settings Description"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:148
+#: includes/class-pixeldima-base.php:141
 msgid "Plugin FAQ"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:150
+#: includes/class-pixeldima-base.php:143
 msgid "Feature Request"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:152
+#: includes/class-pixeldima-base.php:145
 msgid "Report Bug"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:154
+#: includes/class-pixeldima-base.php:147
 msgid "Write Review"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:156
+#: includes/class-pixeldima-base.php:149
 msgid "Contact Me"
 msgstr ""
 
-#: includes/class-pixeldima-base.php:158
+#: includes/class-pixeldima-base.php:151
 msgid "Buy me a Beer or Coffee"
 msgstr ""
 
@@ -1933,19 +1973,19 @@ msgid "Dima Take Action"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://pixeldima.com/dima-take-action-uri/"
+msgid "http://pixeldima.com"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"This is a short description of what the plugin does. It's displayed in the "
-"WordPress admin area."
+"Easily lets you add a Top/Buttom Banner to display a notification and "
+"promotion."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Pixeldima"
+msgid "PixelDima"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://pixeldima.com"
+msgid "https://profiles.wordpress.org/pixeldima"
 msgstr ""

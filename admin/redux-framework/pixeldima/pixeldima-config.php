@@ -399,7 +399,7 @@ Redux::setSection( $opt_name, array(
 		array(
 			'id'      => 'dima-ta-text-color',
 			'type'    => 'color_rgba',
-			'title'   => 'Background Color',
+			'title'   => 'Text Color',
 			'default' => array(
 				'color' => '#FFFFFF',
 				'alpha' => 1

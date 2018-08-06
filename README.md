@@ -1,17 +1,13 @@
-﻿=== Dima Take Action===
-Contributors: pixeldima, adeltahri, ahmeddima
-Donate link: https://themeforest.net/user/pixeldima/portfolio/
-Tags: dima take action, wordpress notification bar, top bar, bottom bar, banner, notification, bar, quick bar, fixed bar, sticky bar, message bar, message, floating button, notice, special offer, discount offer, offer, important, attention bar, heads up, heads up bar, headsup, headsupbar, popup, Toolbar
-Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.7
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
+# Dima Take Action
 Easily lets you add a Top/Buttom Banner to display a notification and promotion.
+**Requires at least:** 4.7  
+**Tested up to:** 4.9  
+**Stable tag:** 0.7.2  
+**License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)  
+**Requires PHP:** 5.3.2  
 
 
-== Description ==
+# Description
 
 Adds a beautiful, customizable take action banner containe a promotion or a news to the top or the bottom of your WordPress site.
 Banner that is dismissable and dismiss is saved by cookie.
@@ -27,7 +23,7 @@ Banner that is dismissable and dismiss is saved by cookie.
 * Floating Button.
 * Responsive.
 
-== Installation ==
+# Installation
 
 1. Click Plugins/Add New from the WordPress admin panel
 2. Search for "DIMA Take Action" and install
@@ -39,20 +35,29 @@ Banner that is dismissable and dismiss is saved by cookie.
 3. Refresh plugin page and activate plugin
 4. Configure plugin using settings link under plugin ‘DIMA Take Action‘
 
-== Screenshots ==
+## Screenshots
  
-1. Page Shows Banner at the top and Float Call To Action Button.
-2. Page Shows Banner at Bottom.
-3. Page Shows Banner at the top with Background Image.
-4. Responsive Banner
-5. Admin Page
-6. Admin Page 2
+### Page Shows Banner at the top and Float Call To Action Button.
+![Page Shows Banner at the top and Float Call To Action Button.](wp-assets/screenshot-1.png)
 
-== Changelog ==
+### Page Shows Banner at Bottom.
+![Page Shows Banner at Bottom.](wp-assets/screenshot-2.png)
 
-1.0.5
+### Page Shows Banner at the top with Background Image.
+![Page Shows Banner at the top with Background Image.](wp-assets/screenshot-3.png)
+
+### Responsive Banner.
+![Responsive Banner.](wp-assets/screenshot-4.png)
+
+### Admin Page.
+![Admin Page.](wp-assets/screenshot-6.png)
+
+### Admin Page 2.
+![Admin Page 2.](wp-assets/screenshot-6.png)
+
+## Changelog 
+### 1.0.5
 * Add: New Option gives the user the ability to open links in a new window.
 * Fix small bugs.
-
-= 1.0 =
+### 1.0 
 * Initial release
