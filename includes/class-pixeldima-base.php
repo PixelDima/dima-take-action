@@ -1,15 +1,10 @@
 <?php
 
-//require_once("class-wpfront-static.php");
-//require_once("class-wpfront-base-menu.php");
-
 if (!class_exists('PixelDima_Base')) {
 
     /**
      * Plugin framework base class
      *
-     * @author Syam Mohan <syam@wpfront.com>
-     * @copyright 2013 WPFront.com
      */
     class PixelDima_Base {
 
@@ -19,11 +14,9 @@ if (!class_exists('PixelDima_Base')) {
         protected $pluginDIRRoot;
         private static $menu_data = array();
 
-        function __construct($file, $pluginSlug, $wpfrontBaseMenu = NULL) {
+        function __construct($file, $pluginSlug) {
             $this->plugin_slug = $pluginSlug;
             $this->options_page_slug = $this->plugin_slug;
-            if ($wpfrontBaseMenu == NULL)
-                $wpfrontBaseMenu = new PixelDima_Base_Menu($this);
 
             $this->pluginURLRoot = plugins_url() . '/' . $this->plugin_slug . '/';
             $this->pluginDIRRoot = dirname($file) . '/../';

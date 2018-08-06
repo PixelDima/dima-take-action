@@ -11,21 +11,6 @@ if ( ! class_exists( 'Redux' ) ) {
 // This is your option name where all the Redux data is stored.
 $opt_name = "dima_ta_demo";
 
-/*
- *
- * --> Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples
- *
- */
-
-$sampleHTML = '';
-if ( file_exists( dirname( __FILE__ ) . '/info-html.html' ) ) {
-	Redux_Functions::initWpFilesystem();
-
-	global $wp_filesystem;
-
-	$sampleHTML = $wp_filesystem->get_contents( dirname( __FILE__ ) . '/info-html.html' );
-}
-
 // Background Patterns Reader
 $sample_patterns_path = ReduxFramework::$_dir . '../pixeldima/patterns/';
 $sample_patterns_url  = ReduxFramework::$_url . '../pixeldima/patterns/';
@@ -56,7 +41,6 @@ if ( is_dir( $sample_patterns_path ) ) {
  * For full documentation on arguments, please refer to: https://github.com/ReduxFramework/ReduxFramework/wiki/Arguments
  * */
 
-$theme = wp_get_theme(); // For use with some settings. Not necessary.
 
 $args = array(
 	'opt_name'             => $opt_name,
@@ -176,7 +160,7 @@ Redux::setSection( $opt_name, array(
 			'id'      => 'dima-ta-banner-enabled',
 			'type'    => 'switch',
 			'title'   => __( 'Enabled Banner', 'dima-take-action' ),
-			'default' => true,
+			'default' => false,
 		),
 
 		array(
@@ -261,6 +245,16 @@ Redux::setSection( $opt_name, array(
 		),
 
 		array(
+			'id'      => 'dima-ta-button-target',
+			'type'    => 'switch',
+			'title'   => __( 'Open on New Window', 'dima-take-action' ),
+			'default' => true,
+			'required' => array(
+				array( 'dima-ta-use-button', 'equals', true ),
+			)
+		),
+
+		array(
 			'id'      => 'dima-ta-banner-msg',
 			'type'    => 'editor',
 			'title'   => __( 'Message Text', 'dima-take-action' ),
@@ -327,6 +321,20 @@ Redux::setSection( $opt_name, array(
 			"min"           => 960,
 			"step"          => 5,
 			"max"           => 1600,
+			'required'      => array(
+				array( 'dima-ta-banner-width-unite', 'equals', 'px' ),
+			),
+			'display_value' => 'text'
+		),
+
+		array(
+			'id'            => 'dima-ta-banner-font-size',
+			'type'          => 'slider',
+			'title'         => __( 'Font Size (px)', 'dima-take-action' ),
+			"default"       => 14,
+			"min"           => 12,
+			"step"          => 1,
+			"max"           => 35,
 			'required'      => array(
 				array( 'dima-ta-banner-width-unite', 'equals', 'px' ),
 			),
@@ -410,7 +418,6 @@ Redux::setSection( $opt_name, array(
 	'id'         => 'banner-btn-style',
 	'subsection' => true,
 	'fields'     => array(
-
 		array(
 			'id'            => 'dima-ta-banner-btn-height',
 			'type'          => 'slider',
@@ -458,55 +465,39 @@ Redux::setSection( $opt_name, array(
 	'subsection' => true,
 	'fields'     => array(
 		array(
-			'id'       => 'dima-ta-use-banner-mobile',
-			'type'     => 'switch',
-			'title'    => __('Show banner on small screen', 'dima-take-action'),
-			'default'  => true,
+			'id'      => 'dima-ta-use-banner-mobile',
+			'type'    => 'switch',
+			'title'   => __( 'Show banner on small screen', 'dima-take-action' ),
+			'default' => true,
 		),
 
 		array(
-			'id'               => 'dima-ta-banner-mobile-url',
-			'type'             => 'text',
-			'title'            => __('Message URL For Mobile', 'dima-take-action'),
+			'id'       => 'dima-ta-banner-mobile-url',
+			'type'     => 'text',
+			'title'    => __( 'Message URL For Mobile', 'dima-take-action' ),
 			'validate' => 'url',
 			'msg'      => '',
 			'default'  => 'https://pixeldima.com/',
 			'required' => array(
-				array('dima-ta-use-banner-mobile','equals',true),
+				array( 'dima-ta-use-banner-mobile', 'equals', true ),
 			)
 		),
 
 		array(
-			'id'               => 'dima-ta-banner-mobile-msg',
-			'type'             => 'editor',
-			'title'            => __('Message Text For Mobile', 'dima-take-action'),
-			'default'          => 'Powered by PixelDima.',
-			'args'   => array(
-				'teeny'            => true,
-				'media_buttons'    => false,
-				'textarea_rows'    => 10
+			'id'       => 'dima-ta-banner-mobile-msg',
+			'type'     => 'editor',
+			'title'    => __( 'Message Text For Mobile', 'dima-take-action' ),
+			'default'  => 'Powered by PixelDima.',
+			'args'     => array(
+				'teeny'         => true,
+				'media_buttons' => false,
+				'textarea_rows' => 10
 			),
 			'required' => array(
-				array('dima-ta-use-banner-mobile','equals',true),
+				array( 'dima-ta-use-banner-mobile', 'equals', true ),
 			)
 		),
 
-	)
-));
-
-Redux::setSection( $opt_name, array(
-	'title'      => __( 'About', 'dima-take-action' ),
-	'desc'            => __( '<p class="description"><strong>We build Pixel-perfect WordPress Themes & Plugins.</strong><br> Get everything you need to power your online business and design process</p>', 'dima-take-action' ),
-	'id'         => 'dima-ta-more',
-	'class'      => 'dima_ta_more',
-	'subsection' => true,
-	'fields'     => array(
-		array(
-			'id'       => 'opt-raw',
-			'type'     => 'raw',
-			'title'    => __('Creative themes', 'dima-take-action'),
-			'content'  => file_get_contents(dirname(__FILE__) . '/info-html.html')
-		),
 	)
 ) );
 
@@ -519,7 +510,7 @@ Redux::setSection( $opt_name, array(
 			'id'      => 'dima-ta-float-button-enabled',
 			'type'    => 'switch',
 			'title'   => __( 'Enabled', 'dima-take-action' ),
-			'default' => true,
+			'default' => false,
 		),
 
 		array(
@@ -561,6 +552,13 @@ Redux::setSection( $opt_name, array(
 		),
 
 		array(
+			'id'      => 'dima-ta-float-button-target',
+			'type'    => 'switch',
+			'title'   => __( 'Open on New Window', 'dima-take-action' ),
+			'default' => true
+		),
+
+		array(
 			'id'      => 'dima-ta-float-button-color',
 			'type'    => 'color_rgba',
 			'title'   => 'Background Color',
@@ -586,6 +584,22 @@ Redux::setSection( $opt_name, array(
 			),
 		),
 
+	)
+) );
+
+Redux::setSection( $opt_name, array(
+	'title'      => __( 'About', 'dima-take-action' ),
+	'desc'       => __( '<p class="description"><strong>We build Pixel-perfect WordPress Themes & Plugins.</strong><br> Get everything you need to power your online business and design process</p>', 'dima-take-action' ),
+	'id'         => 'dima-ta-more',
+	'class'      => 'dima_ta_more',
+	'subsection' => true,
+	'fields'     => array(
+		array(
+			'id'      => 'opt-raw',
+			'type'    => 'raw',
+			'title'   => __( 'Creative themes', 'dima-take-action' ),
+			'content' => file_get_contents( dirname( __FILE__ ) . '/info-html.html' )
+		),
 	)
 ) );
 

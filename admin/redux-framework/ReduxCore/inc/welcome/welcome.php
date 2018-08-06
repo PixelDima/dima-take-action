@@ -562,5 +562,5 @@
         }
     }
 
-    new Redux_Welcome();
+   // new Redux_Welcome();
 

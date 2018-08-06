@@ -1,38 +1,22 @@
 <?php
-
-/**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              http://pixeldima.com
- * @since             1.0.0
- * @package           Dima_Take_Action
- *
- * @wordpress-plugin
- * Plugin Name:       Dima Take Action
- * Plugin URI:        http://pixeldima.com/dima-take-action-uri/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
- * Author:            Pixeldima
- * Author URI:        http://pixeldima.com
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       dima-take-action
- * Domain Path:       /languages
- */
+/*
+Plugin Name: Dima Take Action
+Plugin URI: http://pixeldima.com 
+Description: Easily lets you add a Top/Buttom Banner to display a notification and promotion.
+Version: 1.0.5
+Author: PixelDima
+Author URI: https://profiles.wordpress.org/pixeldima
+License: GPLv2+
+Text Domain: dima-take-action
+*/
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'DIMA_TAKE_ACTION_VERSION', '1.0.0' );
+define( 'DIMA_TAKE_ACTION_VERSION', '1.0.5' );
 define( 'DIMA_TAKE_ACTION_NAME', 'Dima Take Action' );
-
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -67,7 +51,6 @@ register_deactivation_hook( __FILE__, 'deactivate_dima_take_action' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-dima-take-action.php';
 
-
 /**
  * Begins execution of the plugin.
  *
@@ -78,9 +61,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-dima-take-action.php';
  * @since    1.0.0
  */
 function run_dima_take_action() {
-
 	$plugin = new Dima_Take_Action();
 	$plugin->run();
-
 }
+
 run_dima_take_action();

@@ -52,7 +52,7 @@ class Dima_Take_Action_Admin {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 		if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/redux-framework/ReduxCore/framework.php' ) ) {
-			require_once( dirname( __FILE__ ) . '/redux-framework/redux-framework.php' );			
+//			require_once( dirname( __FILE__ ) . '/redux-framework/redux-framework.php' );
 			require_once( dirname( __FILE__ ) . '/redux-framework/ReduxCore/framework.php' );
 		}
 		if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/redux-framework/pixeldima/pixeldima-config.php' ) ) {		

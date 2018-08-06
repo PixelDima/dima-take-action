@@ -30,6 +30,7 @@ class Dima_Take_Action_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
+		
 
 	}
 

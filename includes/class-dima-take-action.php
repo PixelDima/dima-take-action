@@ -35,7 +35,7 @@ class Dima_Take_Action {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Dima_Take_Action_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Dima_Take_Action_Loader $loader Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -44,7 +44,7 @@ class Dima_Take_Action {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 * @var      string $plugin_name The string used to uniquely identify this plugin.
 	 */
 	protected $plugin_name;
 
@@ -53,7 +53,7 @@ class Dima_Take_Action {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @var      string $version The current version of the plugin.
 	 */
 	protected $version;
 
