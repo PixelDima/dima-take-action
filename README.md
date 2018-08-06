@@ -38,22 +38,22 @@ Banner that is dismissable and dismiss is saved by cookie.
 ## Screenshots
  
 ### Page Shows Banner at the top and Float Call To Action Button.
-![Page Shows Banner at the top and Float Call To Action Button.](wp-assets/screenshot-1.png)
+![Page Shows Banner at the top and Float Call To Action Button.](wp-assets/screenshot-1.jpg)
 
 ### Page Shows Banner at Bottom.
-![Page Shows Banner at Bottom.](wp-assets/screenshot-2.png)
+![Page Shows Banner at Bottom.](wp-assets/screenshot-2.jpg)
 
 ### Page Shows Banner at the top with Background Image.
-![Page Shows Banner at the top with Background Image.](wp-assets/screenshot-3.png)
+![Page Shows Banner at the top with Background Image.](wp-assets/screenshot-3.jpg)
 
 ### Responsive Banner.
-![Responsive Banner.](wp-assets/screenshot-4.png)
+![Responsive Banner.](wp-assets/screenshot-4.jpg)
 
 ### Admin Page.
-![Admin Page.](wp-assets/screenshot-6.png)
+![Admin Page.](wp-assets/screenshot-6.jpg)
 
 ### Admin Page 2.
-![Admin Page 2.](wp-assets/screenshot-6.png)
+![Admin Page 2.](wp-assets/screenshot-6.jpg)
 
 ## Changelog 
 ### 1.0.5
